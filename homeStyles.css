@@ -1,0 +1,49 @@
+body {
+    background-color: wheat;
+}
+
+.darkMode {
+    background-color: darkslategray;
+    color: rgb(255, 255, 255);
+}
+
+.darkMode .sidebar {
+    background-color: darkslategray;
+}
+
+.dark-light-button {
+    background-color: rgb(124, 124, 124);
+    margin-left: 1200px;
+    color: whitesmoke;
+}
+
+header {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.sidebar {
+    background-color: wheat;
+    width: 150px;
+    height:max-content;
+    padding-top: 20px;
+}
+
+.sidebar a{
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    display:block;
+}
+
+.sidebar a:hover{
+    color: rgba(31, 31, 31, 0.589);
+}
+
+footer {
+    text-align: center;
+}
