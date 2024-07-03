@@ -13,7 +13,7 @@ body {
     margin: -150px 0px 0px -175px;
 }
 
-.accountInput {
+.usernameInput {
     height: 35px;
     width: 250px;
     border-style: none;
@@ -30,5 +30,30 @@ body {
     border-radius: 25px;
     top: 50%;
     left: 50%;
-    margin: 55px 0px 0px 45px;
+    margin: 25px 0px 0px 45px;
+}
+
+.loginButton {
+    height: 35px;
+    width: 250px;
+    border-style: none;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    margin: 45px 0px 0px 45px;
+}
+.loginButton:hover {
+    background-color: lightblue;
+}
+
+.error {
+    background: #f2dede;
+    color: #a94442;
+    height: 35px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    margin: 65px 0px 0px 45px;
 }
