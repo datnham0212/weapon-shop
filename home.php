@@ -28,28 +28,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home</title>
     <link rel="stylesheet" href="homeStyles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="items.css">
     <script defer src="script.js"></script> <!-- Link to your JavaScript file -->
 </head>
 <body>
     <button class = "dark-light-button" onclick= "toggleDarkMode()">Light Mode</button>
     <header>
-        <h1>Welcome to the weapon store! The best place to purchase and sell weapons</h1>
+         <div class = "header-top">
+            <!-- <h1>Welcome to the weapon store! The best place to purchase and sell weapons</h1> -->
+            <h2>Account: <?php echo $account ?> </h2>
+            <a href="index.php" class="logout">Logout</a>
+         </div>
+
+         <div class = "header-bottom">
+            
+        </div>
     </header>
 
-    
-
-    <div class = "sidebar">
+    <nav>
+        <div class = "navbar">
         <!-- <h3>Products</h3> -->
-        <a href="#" class="sidebar-options">Pistols</a>
-        <a href="#" class="sidebar-options">Rifles</a>
-        <a href="#" class="sidebar-options">Shotguns</a>
-        <a href="#" class="sidebar-options">Sub-Machines</a>
-        <a href="#" class="sidebar-options">Melees</a>
-        <a href="#" class="sidebar-options">Explosives</a>
-        <a href="#" class="sidebar-options">Body armor</a>
-        <a href="#" class="sidebar-options">Other accessories</a>
-    </div>
+            <a href="#" class="sidebar-options">Pistols</a>
+            <a href="#" class="sidebar-options">Rifles</a>
+            <a href="#" class="sidebar-options">Shotguns</a>
+            <a href="#" class="sidebar-options">Sub-Machines</a>
+            <a href="#" class="sidebar-options">Knives</a>
+            <a href="#" class="sidebar-options">Swords</a>
+            <a href="#" class="sidebar-options">Explosives</a>
+            <a href="#" class="sidebar-options">Body armor</a>
+            <a href="#" class="sidebar-options">Others</a>
+        </div>
+    </nav>
 
+    <body>
+        <main>
+            <div class = "display-items">
+                <h2>Stuff</h2>
+            </div>
+        </main>
+    </body>
 
     <footer>
         <p>&copy; 2023 - 2024 All rights reserved</p>
