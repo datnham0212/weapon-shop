@@ -9,17 +9,57 @@ body {
 
 .darkMode .navbar {
     background-color: rgb(0, 0, 0);
+    border: 1px solid white;
 }
 
-.darkMode .navbar a {
+.darkMode .navbar button {
     color: white;
+}
+
+.darkMode .navbar button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.darkMode .navbar button.active {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.darkMode header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.darkMode .logout {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.darkMode .logout:hover {
+    background-color: white;
+    color: black;
+}
+
+.darkMode .dark-light-button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.darkMode .sidebar {
+    border: 2px solid white;
+}
+
+.darkMode td, tr {
+    border: 1px solid white;
 }
 
 .dark-light-button {
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     margin-left: 1250px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 header {
@@ -36,22 +76,42 @@ header {
 .navbar {
     overflow: hidden;
     border: 1px solid black;
-    display: inline-flexbox;
+    background-color: white;
+    display: flex;
 }
 
-.navbar a{
-    padding: 10px 20px 10px 20px;
-    float: left;
+.navbar button{
+    background-color: inherit;
+    float:left;
+    flex: 1;
+    font-size: 20px;
     text-decoration: none;
     text-align: center;
-    font-size: 30px;
     color: black;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
-.navbar a:hover{
+.navbar button:hover{
     color: rgba(31, 31, 31, 0.589);
     background-color: rgba(184, 45, 45, 0.521);
+}
+
+.navbar button.active {
+    background-color: rgba(184, 45, 45, 0.521);
+}
+
+.logout {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.logout:hover{
+    background-color: rgba(184, 45, 45, 0.521);;
 }
 
 footer {

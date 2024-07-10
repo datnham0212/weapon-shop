@@ -32,7 +32,7 @@
     <script defer src="script.js"></script> <!-- Link to your JavaScript file -->
 </head>
 <body>
-    <button class = "dark-light-button" onclick= "toggleDarkMode()">Light Mode</button>
+    <button class = "dark-light-button" onclick= "toggleDarkMode()">Dark Mode</button>
     <header>
          <div class = "header-top">
             <!-- <h1>Welcome to the weapon store! The best place to purchase and sell weapons</h1> -->
@@ -48,22 +48,132 @@
     <nav>
         <div class = "navbar">
         <!-- <h3>Products</h3> -->
-            <a href="#" class="sidebar-options">Pistols</a>
-            <a href="#" class="sidebar-options">Rifles</a>
-            <a href="#" class="sidebar-options">Shotguns</a>
-            <a href="#" class="sidebar-options">Sub-Machines</a>
-            <a href="#" class="sidebar-options">Knives</a>
-            <a href="#" class="sidebar-options">Swords</a>
-            <a href="#" class="sidebar-options">Explosives</a>
-            <a href="#" class="sidebar-options">Body armor</a>
-            <a href="#" class="sidebar-options">Others</a>
+            <button class="navbar-options" onclick="switchNavOp(event, this)" id="defaultOpen">Pistols</button>
+            <button class="navbar-options" onclick="switchNavOp(event, this)">Rifles</button>
+            <button class="navbar-options" onclick="switchNavOp(event, this)">Shotguns</button>
+            <button class="navbar-options" onclick="switchNavOp(event, this)">Sub-Machines</button>
+            <button class="navbar-options" onclick="switchNavOp(event, this)">Knives</button>
+            <button class="navbar-options" onclick="switchNavOp(event, this)">Swords</button>
+            <button class="navbar-options" onclick="switchNavOp(event, this)">Explosives</button>
+            <button class="navbar-options" onclick="switchNavOp(event, this)">Body armors</button>
+            <button class="navbar-options" onclick="switchNavOp(event, this)">Miscellaneous</button>
         </div>
     </nav>
 
     <body>
         <main>
-            <div class = "display-items">
-                <h2>Stuff</h2>
+            <div class = "sidebar half">
+
+            </div>
+
+            <div class = "items-container half">
+            <section id = "Pistols" class = "nav-options-section">
+                <table>
+                    <tr>
+                    <td><div id = "testbox1"></div></td>
+                    <td><div id = "testbox1"></div></td>
+                    <td><div id = "testbox1"></div></td>
+                    </tr>
+
+                    <tr>
+                    <td><div id = "testbox1"></div></td>
+                    <td><div id = "testbox1"></div></td>
+                    <td><div id = "testbox1"></div></td>
+                    </tr>
+
+                    <tr>
+                    <td><div id = "testbox1"></div></td>
+                    <td><div id = "testbox1"></div></td>
+                    <td><div id = "testbox1"></div></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id = "Rifles" class = "nav-options-section">
+            <table>
+                    <tr>
+                    <td><div id = "testbox2"></div></td>
+                    <td><div id = "testbox2"></div></td>
+                    <td><div id = "testbox2"></div></td>
+                    </tr>
+
+                    <tr>
+                    <td><div id = "testbox2"></div></td>
+                    <td><div id = "testbox2"></div></td>
+                    <td><div id = "testbox2"></div></td>
+                    </tr>
+
+                    <tr>
+                    <td><div id = "testbox2"></div></td>
+                    <td><div id = "testbox2"></div></td>
+                    <td><div id = "testbox2"></div></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id = "Shotguns" class = "nav-options-section">
+            <table>
+                    <tr>
+                    <td><div id = "testbox3"></div></td>
+                    <td><div id = "testbox3"></div></td>
+                    <td><div id = "testbox3"></div></td>
+                    </tr>
+
+                    <tr>
+                    <td><div id = "testbox3"></div></td>
+                    <td><div id = "testbox3"></div></td>
+                    <td><div id = "testbox3"></div></td>
+                    </tr>
+
+                    <tr>
+                    <td><div id = "testbox3"></div></td>
+                    <td><div id = "testbox3"></div></td>
+                    <td><div id = "testbox3"></div></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id = "Sub-Machines" class = "nav-options-section">
+            <table>
+                    <tr>
+                    <td><div id = "testbox4"></div></td>
+                    <td><div id = "testbox4"></div></td>
+                    <td><div id = "testbox4"></div></td>
+                    </tr>
+
+                    <tr>
+                    <td><div id = "testbox4"></div></td>
+                    <td><div id = "testbox4"></div></td>
+                    <td><div id = "testbox4"></div></td>
+                    </tr>
+
+                    <tr>
+                    <td><div id = "testbox4"></div></td>
+                    <td><div id = "testbox4"></div></td>
+                    <td><div id = "testbox4"></div></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id = "Knives" class = "nav-options-section">
+                <h2>Older Stuff</h2>
+            </section>
+
+            <section id = "Swords" class = "nav-options-section">
+                <h2>Even Older Stuff</h2>
+            </section>
+
+            <section id = "Explosives" class = "nav-options-section">
+                <h2>Even Even Older Stuff</h2>
+            </section>
+
+            <section id = "Body armors" class = "nav-options-section">
+                <h2>Even Older Stuff</h2>
+            </section>
+
+            <section id = "Miscellaneous" class = "nav-options-section">
+                <h2>Even Even Older Stuff</h2>
+            </section>
             </div>
         </main>
     </body>
@@ -79,10 +189,33 @@
 
             var btn = document.querySelector(".dark-light-button");
             if (element.classList.contains("darkMode"))
-                btn.innerHTML = 'Dark Mode';
+                btn.innerHTML = 'Light Mode';
             else
-            btn.innerHTML = 'Light Mode';
+            btn.innerHTML = 'Dark Mode';
         }
+
+        function switchNavOp(evt, option){
+            var current = option.textContent;
+            var i, navsection, navlink; 
+            
+            navsection = document.getElementsByClassName("nav-options-section");
+
+            for(i = 0; i < navsection.length; i++){
+                navsection[i].style.display = 'none';
+            }
+            
+            navlink = document.getElementsByClassName("navbar-options");
+
+            for(i = 0; i < navlink.length; i++){
+                navlink[i].className = navlink[i].className.replace(" active", "");
+            }
+
+            document.getElementById(current).style.display = 'block';
+            evt.currentTarget.className += ' active';
+        }
+
+        document.getElementById("defaultOpen").click();
+
     </script>
 </body>
 </html>
